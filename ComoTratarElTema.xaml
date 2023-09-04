@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBullying.ComoTratarElTema"
+             Title="ComoTratarElTema">
+    <VerticalStackLayout>
+
+
+        <Label Text="Cómo enfrentar el acoso" FontSize="24" FontAttributes="Bold" TextColor="BlueViolet" />
+        
+        <Image Source="enfrentar_acoso_image.png" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+
+        <Label Text="Si estás siendo acosado:" FontSize="18" TextColor="Black" Margin="0,10,0,10" />
+        <Label Text="1. Habla con un adulto de confianza: Cuéntales lo que estás viviendo." FontSize="14" TextColor="Gray" />
+        <Label Text="2. No te quedes callado: Informa a tus padres, maestros u otros adultos." FontSize="14" TextColor="Gray" />
+        <Label Text="3. Bloquea al acosador: Si es en línea, bloquea y denuncia." FontSize="14" TextColor="Gray" />
+
+        <BoxView HeightRequest="20" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBullying.InfoAcoso"
+             Title="Información sobre el Acoso">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="¿Qué es el acoso?" FontSize="24" FontAttributes="Bold" TextColor="BlueViolet" />
+            <Image Source="acoso_image.png" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+
+            <Label Text="El acoso es..." FontSize="18" TextColor="Black" Margin="0,10,0,10" />
+            <Label Text="El acoso es un comportamiento repetitivo e intencional que busca causar daño emocional, físico o social a otra persona. Puede ocurrir en diferentes lugares, como la escuela, en línea o en la comunidad." FontSize="14" TextColor="Gray" />
+
+            <BoxView HeightRequest="10" />
+
+            <Label Text="Tipos de Acoso" FontSize="24" FontAttributes="Bold" TextColor="BlueViolet" />
+            <Image Source="tipos_acoso_image.png" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+
+            <Label Text="Existen varios tipos de acoso, incluyendo:" FontSize="18" TextColor="Black" Margin="0,10,0,10" />
+            <StackLayout Spacing="10">
+                <Label Text="- Acoso verbal: Insultos y palabras hirientes." FontSize="14" TextColor="Gray" />
+                <Label Text="- Acoso social: Excluir a alguien o difundir rumores." FontSize="14" TextColor="Gray" />
+                <Label Text="- Acoso cibernético: A través de redes sociales y mensajes en línea." FontSize="14" TextColor="Gray" />
+                <Label Text="- Acoso físico: Agresiones físicas o daños a pertenencias." FontSize="14" TextColor="Gray" />
+            </StackLayout>
+
+            <BoxView HeightRequest="10" />
+
+            <Button Text="¿Cómo tratar el tema?" Clicked="OnComoTratarTemaClicked" BackgroundColor="Gray" HorizontalOptions="Center"/>
+
+            <Button Text="Recursos de Apoyo" Clicked="OnRecursosClicked" BackgroundColor="BlueViolet" TextColor="White" HorizontalOptions="Center" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBullying.Mensajeria"
+             Title="Comunicarse">
+    <VerticalStackLayout Spacing="10">
+        <ScrollView>
+            <StackLayout x:Name="ChatMessagesLayout" Padding="10"/>
+        </ScrollView>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="F" Clicked="OnAttachPhotoClicked" Grid.Row="0" Grid.Column="2"/>
+            <Button Text="V" Clicked="OnAttachVideoClicked" Grid.Row="0" Grid.Column="1"/>
+            <Entry x:Name="MessageEntry" Placeholder="Escribe un mensaje..." Grid.Row="0" Grid.Column="0"/>
+            <Button Text="Enviar" Clicked="OnSendMessageClicked" Grid.Row="0" Grid.Column="3"/>
+        </Grid>
+
+        <!-- Vista previa de la imagen seleccionada -->
+        <Image x:Name="PreviewImage" HeightRequest="100" WidthRequest="100" />
+        <!-- Vista previa del video seleccionado -->
+        <WebView x:Name="PreviewVideo" HeightRequest="300" WidthRequest="400" IsVisible="False" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
+

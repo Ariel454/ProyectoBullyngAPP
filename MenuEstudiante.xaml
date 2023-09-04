@@ -31,7 +31,7 @@
         <Button Text="Tests Disponibles" Clicked="OnTestsDisponiblesClicked" BackgroundColor="Gray" HorizontalOptions="Center"/>
         <Button Text="Información sobre acoso" Clicked="OnInformacionAcosoClicked" BackgroundColor="Gray" HorizontalOptions="Center"/>
         <Button Text="Cuento Interactivo" Clicked="OnCuentoInteractivoClicked" BackgroundColor="Gray" HorizontalOptions="Center"/>
-        <Button Text="¿Cómo tratar el tema?" Clicked="OnComoTratarTemaClicked" BackgroundColor="Gray" HorizontalOptions="Center"/>
+
         <Button Text="Formulario de Apoyo" Clicked="OnFormularioApoyoClicked" BackgroundColor="Gray" HorizontalOptions="Center"/>
         <Button Text="Comunicarse" Clicked="OnComunicarseClicked" BackgroundColor="Gray" HorizontalOptions="Center"/>
     </VerticalStackLayout>

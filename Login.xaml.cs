@@ -91,6 +91,47 @@ public partial class Login : ContentPage
         }
     }
 
+    //public async void OnLoginButton2Clicked(object sender, EventArgs e)
+    //{
+    //    string user = UserNameEntry.Text;
+    //    string pass = passwordEntry.Text;
+
+
+    //    using (var client = new HttpClient())
+    //    {
+    //        //var url = "https://localhost:7184/Usuarios/ListarUsuarios";
+    //        var url = "https://192.168.10.199:7184/Usuarios/ListarUsuarios";
+    //        var response = await client.GetAsync(url);
+    //        if (response.IsSuccessStatusCode)
+    //        {
+    //            var content = await response.Content.ReadAsStringAsync();
+    //            var listaUsuarios = JsonConvert.DeserializeObject<List<Usuario>>(content);
+    //            Usuario usuario = listaUsuarios.FirstOrDefault(u => u.nombreUsuario == user && u.contrasenia == pass);
+
+    //            if (usuario != null)
+    //            {
+
+    //                        await Navigation.PushAsync(new MenuEstudiante(usuario));
+    //                        await Task.Delay(1000); // Esperar un momento
+    //                        await DisplayAlert("Error", "Ingreso exitoso", "OK");
+    //            }
+    //            else
+    //            {
+    //                    // Credenciales inválidas, mostrar mensaje de error
+    //                    await DisplayAlert("Error", "Verifique las credenciales", "OK");
+    //             }
+
+
+    //            }
+    //            else
+    //            {
+    //                // Credenciales inválidas, mostrar mensaje de error
+    //                await DisplayAlert("Error", "Credenciales inválidas", "OK");
+    //            }
+    //        }
+    // }
+
+
     public async void cargarInstituciones() {
 
         using (var client = new HttpClient()) {

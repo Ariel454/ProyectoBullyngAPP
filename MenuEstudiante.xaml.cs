@@ -75,9 +75,9 @@ public partial class MenuEstudiante : ContentPage, INotifyPropertyChanged
         await Navigation.PushAsync(new Tests());
     }
 
-    private void OnInformacionAcosoClicked(object sender, EventArgs e)
+    private async void OnInformacionAcosoClicked(object sender, EventArgs e)
     {
-
+        await Navigation.PushAsync(new InfoAcoso());
     }
 
 
@@ -91,14 +91,14 @@ public partial class MenuEstudiante : ContentPage, INotifyPropertyChanged
 
     }
 
-    private void OnFormularioApoyoClicked(object sender, EventArgs e)
+    private async void OnFormularioApoyoClicked(object sender, EventArgs e)
     {
-
+        await Navigation.PushAsync(new Formulario());
     }
 
-    private void OnComunicarseClicked(object sender, EventArgs e)
+    private async void OnComunicarseClicked(object sender, EventArgs e)
     {
-
+        await Navigation.PushAsync(new Comunicarse());
     }
 
 
